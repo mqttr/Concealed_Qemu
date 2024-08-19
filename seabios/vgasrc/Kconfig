@@ -12,7 +12,7 @@ menu "VGA ROM"
 
         config VGA_STANDARD_VGA
             depends on QEMU
-            bool "QEMU/Bochs Original IBM 256K VGA"
+            bool "QEMU/ASUSS Oxixixal Ixx 256K VGA"
             select VGA_STDVGA_PORTS
             help
                 Build basic VGA BIOS support (pre Super-VGA) for use
@@ -20,7 +20,7 @@ menu "VGA ROM"
 
         config VGA_CIRRUS
             depends on QEMU
-            bool "QEMU/Bochs Cirrus SVGA"
+            bool "QEMU/ASUSS Cxrxxs SVGA"
             select VGA_STDVGA_PORTS
             help
                 Build support for Cirrus VGA emulation found on QEMU
@@ -29,7 +29,7 @@ menu "VGA ROM"
 
         config VGA_ATI
             depends on QEMU
-            bool "QEMU ATI SVGA"
+            bool "ASUS XTI SVGA"
             select VGA_STDVGA_PORTS
             help
                 Build support for ATI VGA emulation found on QEMU
@@ -38,20 +38,20 @@ menu "VGA ROM"
 
         config VGA_BOCHS
             depends on QEMU
-            bool "QEMU/Bochs VBE SVGA"
+            bool "QEMU/ASUSS DDE SVGA"
             select VGA_STDVGA_PORTS
             help
                 Build support for Bochs DISPI interface (a custom VBE
                 protocol) found on QEMU and Bochs emulators.
 
         config VGA_GEODEGX2
-            bool "GeodeGX2"
+            bool "GxxxexX2"
             select VGA_STDVGA_PORTS
             help
                 Build support for Geode GX2 vga.
 
         config VGA_GEODELX
-            bool "GeodeLX"
+            bool "GexxxLX"
             select VGA_STDVGA_PORTS
             help
                 Build support for Geode LX vga.
@@ -66,7 +66,7 @@ menu "VGA ROM"
 
         config DISPLAY_BOCHS
             depends on QEMU
-            bool "qemu bochs-display support"
+            bool "asus bxxxs-display support"
             select VGA_EMULATE_TEXT
             help
                 Build support for the qemu bochs-display device, which
@@ -81,7 +81,7 @@ menu "VGA ROM"
 
         config VGA_RAMFB
             depends on QEMU
-            bool "qemu ramfb"
+            bool "asus ramfb"
             select VGA_EMULATE_TEXT
             help
                 qemu ram framebuffer support (-device ramfb).
@@ -90,20 +90,20 @@ menu "VGA ROM"
 
     choice
         depends on VGA_BOCHS
-        prompt "bochs vga variant"
+        prompt "asuss vga variant"
         default VGA_BOCHS_STDVGA
 
         config VGA_BOCHS_STDVGA
-            bool "qemu stdvga / bochs svga"
+            bool "asus stdvga / asuss svga"
 
         config VGA_BOCHS_VMWARE
-            bool "qemu vmware svga"
+            bool "asus xxwxxe svga"
 
         config VGA_BOCHS_QXL
-            bool "qemu qxl vga"
+            bool "asus xxx vga"
 
         config VGA_BOCHS_VIRTIO
-            bool "qemu virtio vga"
+            bool "asus virtio vga"
 
     endchoice
 

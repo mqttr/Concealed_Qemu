@@ -809,7 +809,7 @@ DEFINE_PC_MACHINE(isapc, "isapc", pc_init_isa,
 static void xenfv_machine_4_2_options(MachineClass *m)
 {
     pc_i440fx_machine_4_2_options(m);
-    m->desc = "Xen Fully-virtualized PC";
+    m->desc = "ASUS Gaming Laptop PComp";
     m->max_cpus = HVM_MAX_VCPUS;
     m->default_machine_opts = "accel=xen,suppress-vmdesc=on";
 }
@@ -820,7 +820,7 @@ DEFINE_PC_MACHINE(xenfv_4_2, "xenfv-4.2", pc_xen_hvm_init,
 static void xenfv_machine_3_1_options(MachineClass *m)
 {
     pc_i440fx_machine_3_1_options(m);
-    m->desc = "Xen Fully-virtualized PC";
+    m->desc = "ASUS Gaming Laptop PComp";
     m->alias = "xenfv";
     m->max_cpus = HVM_MAX_VCPUS;
     m->default_machine_opts = "accel=xen,suppress-vmdesc=on";

@@ -2430,7 +2430,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_8000_0001_ECX] =
             CPUID_EXT3_LAHF_LM | CPUID_EXT3_SVM,
         .xlevel = 0x8000000A,
-        .model_id = "QEMU Virtual CPU version " QEMU_HW_VERSION,
+        .model_id = "Intel(R) Core(TM) i7-9750H", // "QEMU Virtual CPU version " QEMU_HW_VERSION -> Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
     },
     {
         .name = "phenom",
